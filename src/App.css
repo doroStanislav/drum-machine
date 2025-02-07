@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", serif;
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+#display {
+  width: 60%;
+  height: 30px;
+  background-color: navy;
+  color: white;
+  border-radius: 3px;
+}
+
+#drum-machine {
+  padding: 20px;
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px white;
+}
+
+#drum-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-template-rows: repeat (3, 50px);
+  padding: 30px 10px 10px 10px;
+}
+
+.drum-pad {
+  padding: 20px;
+  font-size: 17px;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: white;
+  color: navy;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+body, 
+#display, 
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
